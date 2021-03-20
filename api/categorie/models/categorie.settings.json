@@ -1,0 +1,33 @@
+{
+  "kind": "collectionType",
+  "collectionName": "categories",
+  "info": {
+    "name": "categorie"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true,
+      "unique": true,
+      "maxLength": 20,
+      "minLength": 3
+    },
+    "image_url": {
+      "type": "text"
+    },
+    "posts": {
+      "via": "categories",
+      "collection": "post",
+      "dominant": true
+    },
+    "post": {
+      "via": "category",
+      "model": "post"
+    }
+  }
+}

@@ -1,0 +1,12 @@
+{
+    "routes": [
+        {
+            "method": "POST",
+            "path": "/signup",
+            "handler": "User.signup",
+            "config": {
+                "policies": []
+            }
+        }
+    ]
+}

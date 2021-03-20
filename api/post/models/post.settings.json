@@ -1,0 +1,62 @@
+{
+  "kind": "collectionType",
+  "collectionName": "posts",
+  "info": {
+    "name": "post",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true,
+      "unique": true,
+      "minLength": 5,
+      "maxLength": 140
+    },
+    "description": {
+      "type": "text",
+      "required": true,
+      "minLength": 10,
+      "maxLength": 170
+    },
+    "body": {
+      "type": "string",
+      "minLength": 10
+    },
+    "users_permissions_users": {
+      "plugin": "users-permissions",
+      "collection": "user",
+      "via": "posts",
+      "dominant": true
+    },
+    "categories": {
+      "collection": "categorie",
+      "via": "posts"
+    },
+    "category": {
+      "model": "categorie",
+      "via": "post"
+    },
+    "src": {
+      "type": "text",
+      "required": true
+    },
+    "content_type": {
+      "type": "string",
+      "default": "article"
+    },
+    "image_url": {
+      "type": "text",
+      "required": true
+    },
+    "storage_id": {
+      "type": "text",
+      "required": true
+    }
+  }
+}
