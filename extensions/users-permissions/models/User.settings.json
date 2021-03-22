@@ -97,8 +97,12 @@
       "type": "string"
     },
     "posts": {
-      "via": "users_permissions_user",
-      "collection": "post"
+      "collection": "post",
+      "via": "users_permissions_user"
+    },
+    "gender": {
+      "type": "string",
+      "default": "male"
     }
   }
 }

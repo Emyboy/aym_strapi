@@ -27,9 +27,9 @@
       "minLength": 10
     },
     "users_permissions_user": {
+      "via": "posts",
       "plugin": "users-permissions",
-      "model": "user",
-      "via": "posts"
+      "model": "user"
     },
     "categories": {
       "collection": "categorie",
