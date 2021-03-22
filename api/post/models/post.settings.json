@@ -16,23 +16,20 @@
       "required": true,
       "unique": true,
       "minLength": 5,
-      "maxLength": 140
+      "maxLength": 170
     },
     "description": {
       "type": "text",
-      "required": true,
-      "minLength": 10,
-      "maxLength": 170
+      "required": true
     },
     "body": {
-      "type": "string",
+      "type": "text",
       "minLength": 10
     },
-    "users_permissions_users": {
+    "users_permissions_user": {
       "plugin": "users-permissions",
-      "collection": "user",
-      "via": "posts",
-      "dominant": true
+      "model": "user",
+      "via": "post"
     },
     "categories": {
       "collection": "categorie",

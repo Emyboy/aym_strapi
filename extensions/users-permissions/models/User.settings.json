@@ -59,10 +59,6 @@
       "plugin": "users-permissions",
       "configurable": false
     },
-    "posts": {
-      "via": "users_permissions_users",
-      "collection": "post"
-    },
     "first_name": {
       "type": "string",
       "required": true
@@ -78,6 +74,10 @@
     "phone_number": {
       "type": "string",
       "minLength": 11
+    },
+    "post": {
+      "via": "users_permissions_user",
+      "model": "post"
     }
   }
 }
