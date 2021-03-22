@@ -76,8 +76,29 @@
       "minLength": 11
     },
     "post": {
-      "via": "users_permissions_user",
-      "model": "post"
+      "model": "post",
+      "via": "users_permissions_user"
+    },
+    "title": {
+      "type": "string"
+    },
+    "bio": {
+      "type": "text"
+    },
+    "twitter": {
+      "type": "string"
+    },
+    "facebook": {
+      "type": "string"
+    },
+    "website": {
+      "type": "string"
+    },
+    "linkedin": {
+      "type": "string"
+    },
+    "instagram": {
+      "type": "string"
     }
   }
 }
