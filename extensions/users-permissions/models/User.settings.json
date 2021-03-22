@@ -75,10 +75,6 @@
       "type": "string",
       "minLength": 11
     },
-    "post": {
-      "model": "post",
-      "via": "users_permissions_user"
-    },
     "title": {
       "type": "string"
     },
@@ -99,6 +95,10 @@
     },
     "instagram": {
       "type": "string"
+    },
+    "posts": {
+      "via": "users_permissions_user",
+      "collection": "post"
     }
   }
 }
