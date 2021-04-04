@@ -27,9 +27,9 @@
       "minLength": 10
     },
     "users_permissions_user": {
-      "via": "posts",
       "plugin": "users-permissions",
-      "model": "user"
+      "model": "user",
+      "via": "posts"
     },
     "categories": {
       "collection": "categorie",
@@ -54,6 +54,14 @@
     "storage_id": {
       "type": "text",
       "required": true
+    },
+    "likes": {
+      "collection": "likes",
+      "via": "post"
+    },
+    "comments": {
+      "via": "post",
+      "collection": "comment"
     }
   }
 }

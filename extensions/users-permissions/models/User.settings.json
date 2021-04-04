@@ -97,12 +97,20 @@
       "type": "string"
     },
     "posts": {
-      "collection": "post",
-      "via": "users_permissions_user"
+      "via": "users_permissions_user",
+      "collection": "post"
     },
     "gender": {
       "type": "string",
       "default": "male"
+    },
+    "like": {
+      "via": "users_permissions_user",
+      "model": "likes"
+    },
+    "replie": {
+      "via": "users_permissions_user",
+      "model": "replie"
     }
   }
 }

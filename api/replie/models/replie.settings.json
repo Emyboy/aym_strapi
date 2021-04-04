@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "replies",
+  "info": {
+    "name": "replie"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "reply_text": {
+      "type": "text",
+      "required": true
+    },
+    "comment": {
+      "via": "replies",
+      "model": "comment"
+    },
+    "users_permissions_user": {
+      "plugin": "users-permissions",
+      "model": "user",
+      "via": "replie"
+    }
+  }
+}
