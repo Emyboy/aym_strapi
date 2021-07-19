@@ -36,8 +36,7 @@
       "via": "posts"
     },
     "category": {
-      "model": "categorie",
-      "via": "post"
+      "model": "categorie"
     },
     "src": {
       "type": "text",
@@ -60,8 +59,23 @@
       "via": "post"
     },
     "comments": {
-      "via": "post",
-      "collection": "comment"
+      "collection": "comment",
+      "via": "post"
+    },
+    "image_type": {
+      "type": "string",
+      "default": "p",
+      "required": true
+    },
+    "views": {
+      "type": "biginteger",
+      "default": "0",
+      "required": true
+    },
+    "on_promo": {
+      "type": "boolean",
+      "default": false,
+      "required": true
     }
   }
 }

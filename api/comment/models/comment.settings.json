@@ -28,8 +28,8 @@
       "collection": "likes"
     },
     "post": {
-      "model": "post",
-      "via": "comments"
+      "via": "comments",
+      "model": "post"
     }
   }
 }
